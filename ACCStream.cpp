@@ -42,7 +42,7 @@ void ACCStream<T>::init_arrays(T initA, T initB, T initC)
   T * restrict a = this->a;
   T * restrict b = this->b;
   T * restrict c = this->c;
-  #pragma acc parallel gang vector loop present(a[0:array_size], b[0:array_size], c[0:array_size]) 
+  #pragma acc parallel loop gang vector present(a[0:array_size], b[0:array_size], c[0:array_size]) 
   for (int i = 0; i < array_size; i++)
   {
     a[i] = initA;
