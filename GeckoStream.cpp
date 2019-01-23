@@ -13,9 +13,9 @@ GeckoStream<T>::GeckoStream(const unsigned int ARRAY_SIZE, int device)
   #pragma gecko config file("gecko.conf")
 
   // Set up data region on device
-  #pragma gecko memory allocate(a[0:array_size]) type(T) location(geckoLoction) 
-  #pragma gecko memory allocate(b[0:array_size]) type(T) location(geckoLoction) 
-  #pragma gecko memory allocate(c[0:array_size]) type(T) location(geckoLoction) 
+  #pragma gecko memory allocate(a[0:array_size]) type(T) location(exec_location) 
+  #pragma gecko memory allocate(b[0:array_size]) type(T) location(exec_location) 
+  #pragma gecko memory allocate(c[0:array_size]) type(T) location(exec_location) 
 }
 
 template <class T>
@@ -34,7 +34,7 @@ void GeckoStream<T>::init_arrays(T initA, T initB, T initC)
   T * restrict c = this->c;
   // #pragma acc parallel loop present(a[0:array_size], b[0:array_size], c[0:array_size]) wait
 
-  #pragma gecko region at(geckoLoction) exec_pol(exec_pol_chosen) variable_list(a,b,c)
+  #pragma gecko region at(exec_location) exec_pol(exec_pol_chosen) variable_list(a,b,c)
   for (int i = 0; i < array_size; i++)
   {
     a[i] = initA;
@@ -43,7 +43,7 @@ void GeckoStream<T>::init_arrays(T initA, T initB, T initC)
   }
   #pragma gecko region end
 
-  #pragma gecko region pause at(geckoLoction) 
+  #pragma gecko region pause at(exec_location) 
 }
 
 template <class T>
@@ -139,7 +139,7 @@ void GeckoStream<T>::triad()
   }
   #pragma gecko region end
 
-  #pragma gecko region pause at(geckoLoction) 
+  #pragma gecko region pause at(exec_location) 
 }
 
 template <class T>

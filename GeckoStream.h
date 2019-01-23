@@ -27,7 +27,7 @@ class GeckoStream : public Stream<T>
     T *b;
     T *c;
 
-    char *geckoLoction = "LocA";
+    char *exec_location = "LocA";
     char *exec_pol_chosen = "static";
 
   public:
