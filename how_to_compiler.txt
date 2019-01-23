@@ -1,0 +1,36 @@
+Kokkos:
+---------------------------------------------
+
+OMP:
+	
+
+CUDA:
+	make -f Kokkos.make COMPILER=GNU TARGET=GPU -j 4
+
+
+
+RAJA:
+---------------------------------------------
+
+OMP:
+Make the lib itself for OpenMP: 
+	cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_C_COMPILER=gcc -DCMAKE_CXX_COMPILER=g++ -DCMAKE_INSTALL_PREFIX=../install-omp -DENABLE_OPENMP=ON -DENABLE_CUDA=OFF ../
+	make -j 4
+	make install
+
+CUDA:
+	cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_C_COMPILER=gcc -DCMAKE_CXX_COMPILER=g++ -DCMAKE_INSTALL_PREFIX=../install-cuda -DENABLE_OPENMP=ON -DENABLE_CUDA=ON ../
+	make -j 4
+	make install
+
+
+Building Babel:
+
+For CPU:
+	Setting the RAJA path in Makefile : /home/millad/github/raja/install-omp
+	make -f RAJA.make COMPILER=GNU TARGET=CPU
+
+For GPU:
+	Setting the RAJA path in Makefile : /home/millad/github/raja/install-cuda
+	make -f RAJA.make COMPILER=GNU TARGET=GPU ARCH=sm_70
+
