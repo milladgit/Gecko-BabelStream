@@ -1,4 +1,6 @@
 
+GECKO_DIR = /home/mghane/gecko
+
 COMPILER = PGI
 TARGET = ALL
 
@@ -45,7 +47,6 @@ endif
 
 FLAGS_PGI += $(TARGET_FLAGS_$(TARGET))
 
-GECKO_DIR = /home/millad/gecko
 FLAGS_PGI += -DCUDA_ENABLED -I$(CUDA_HOME)/include/ -I$(GECKO_DIR)/ -L$(GECKO_DIR)/lib -L$(CUDA_HOME)/lib64
 FLAGS_LIB = $(GECKO_DIR)/lib/libgecko.a -lcudart 
 
@@ -55,8 +56,10 @@ FLAGS_CRAY = -hstd=c++11
 CXXFLAGS = $(FLAGS_$(COMPILER))
 
 gecko-stream: main.cpp GeckoStream.cpp
-	$(COMPILER_$(COMPILER)) $(CXXFLAGS) -DGECKO $^ $(EXTRA_FLAGS) -o $@ $(FLAGS_LIB)
+	$(COMPILER_$(COMPILER)) $(CXXFLAGS) -DGECKO main.cpp GeckoStream.cpp $(EXTRA_FLAGS) -o $@ $(FLAGS_LIB)
 
 .PHONY: clean
 clean:
 	rm -f gecko-stream main.o GeckoStream.o
+
+

@@ -34,7 +34,7 @@ void GeckoStream<T>::init_arrays(T initA, T initB, T initC)
   T * restrict c = this->c;
   // #pragma acc parallel loop present(a[0:array_size], b[0:array_size], c[0:array_size]) wait
 
-  #pragma gecko region at(exec_location) exec_pol(exec_pol_chosen) variable_list(a,b,c)
+  #pragma gecko region gang vector exec_pol(exec_pol_chosen) variable_list(a,b,c)
   for (int i = 0; i < array_size; i++)
   {
     a[i] = initA;
@@ -132,7 +132,7 @@ void GeckoStream<T>::triad()
   T * restrict c = this->c;
 
   // #pragma acc parallel loop present(a[0:array_size], b[0:array_size], c[0:array_size]) wait
-  #pragma gecko region exec_pol(exec_pol_chosen) variable_list(a,b,c)
+  #pragma gecko region gang vector exec_pol(exec_pol_chosen) variable_list(a,b,c)
   for (int i = 0; i < array_size; i++)
   {
     a[i] = b[i] + scalar * c[i];
