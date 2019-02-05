@@ -1,0 +1,326 @@
+HOST
+-----------------------------
+
+BabelStream
+Version: 3.3
+Implementation: OpenMP
+Running triad 200 times
+Number of elements: 256000000
+Precision: double
+Array size: 2048000.0 KB (=2048.0 MB)
+Total size: 6144000.0 KB (=6144.0 MB)
+--------------------------------
+Runtime (seconds): 16.07976
+Bandwidth (GB/s):  76.419
+==========================================================
+
+BabelStream
+Version: 3.3
+Implementation: Kokkos
+Running triad 200 times
+Number of elements: 256000000
+Precision: double
+Array size: 2048000.0 KB (=2048.0 MB)
+Total size: 6144000.0 KB (=6144.0 MB)
+--------------------------------
+Runtime (seconds): 16.21635
+Bandwidth (GB/s):  75.775
+==========================================================
+
+BabelStream
+Version: 3.3
+Implementation: RAJA
+Running triad 200 times
+Number of elements: 256000000
+Precision: double
+Array size: 2048000.0 KB (=2048.0 MB)
+Total size: 6144000.0 KB (=6144.0 MB)
+--------------------------------
+Runtime (seconds): 15.90566
+Bandwidth (GB/s):  77.256
+==========================================================
+
+BabelStream
+Version: 3.3
+Implementation: OpenACC
+Running triad 200 times
+Number of elements: 256000000
+Precision: double
+Array size: 2048000.0 KB (=2048.0 MB)
+Total size: 6144000.0 KB (=6144.0 MB)
+--------------------------------
+Runtime (seconds): 15.33848
+Bandwidth (GB/s):  80.112
+==========================================================
+
+
+LocA -> LocH -> LocN -> LocN1
+BabelStream
+Version: 3.3
+Implementation: Gecko
+Running triad 200 times
+Number of elements: 256000000
+Precision: double
+Array size: 2048000.0 KB (=2048.0 MB)
+Total size: 6144000.0 KB (=6144.0 MB)
+--------------------------------
+Runtime (seconds): 18.76288
+Bandwidth (GB/s):  65.491
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+GPU
+-------------------------------
+
+BabelStream
+Version: 3.3
+Implementation: CUDA
+Running triad 200 times
+Number of elements: 256000000
+Precision: double
+Array size: 2048000.0 KB (=2048.0 MB)
+Total size: 6144000.0 KB (=6144.0 MB)
+Using CUDA device Tesla V100-PCIE-32GB
+Driver: 10000
+--------------------------------
+Runtime (seconds): 1.50715
+Bandwidth (GB/s):  815.315
+==========================================================
+
+BabelStream
+Version: 3.3
+Implementation: Kokkos
+Running triad 200 times
+Number of elements: 256000000
+Precision: double
+Array size: 2048000.0 KB (=2048.0 MB)
+Total size: 6144000.0 KB (=6144.0 MB)
+--------------------------------
+Runtime (seconds): 1.50305
+Bandwidth (GB/s):  817.537
+==========================================================
+
+BabelStream
+Version: 3.3
+Implementation: RAJA
+Running triad 200 times
+Number of elements: 256000000
+Precision: double
+Array size: 2048000.0 KB (=2048.0 MB)
+Total size: 6144000.0 KB (=6144.0 MB)
+--------------------------------
+Runtime (seconds): 1.50600
+Bandwidth (GB/s):  815.934
+==========================================================
+
+BabelStream
+Version: 3.3
+Implementation: OpenACC
+Running triad 200 times
+Number of elements: 256000000
+Precision: double
+Array size: 2048000.0 KB (=2048.0 MB)
+Total size: 6144000.0 KB (=6144.0 MB)
+--------------------------------
+Runtime (seconds): 1.55055
+Bandwidth (GB/s):  792.491
+==========================================================
+
+
+
+LocA -> LocH -> LocG -> LocG1
+
+BabelStream
+Version: 3.3
+Implementation: Gecko
+Running triad 200 times
+Number of elements: 256000000
+Precision: double
+Array size: 2048000.0 KB (=2048.0 MB)
+Total size: 6144000.0 KB (=6144.0 MB)
+--------------------------------
+Runtime (seconds): 1.55791
+Bandwidth (GB/s):  788.747
+
+
+
+LocA -> LocG -> LocH -> LocG1
+
+BabelStream
+Version: 3.3
+Implementation: Gecko
+Running triad 200 times
+Number of elements: 256000000
+Precision: double
+Array size: 2048000.0 KB (=2048.0 MB)
+Total size: 6144000.0 KB (=6144.0 MB)
+--------------------------------
+Runtime (seconds): 1.55732
+Bandwidth (GB/s):  789.046
+
+
+LocA -> LocG -> LocH
+
+BabelStream
+Version: 3.3
+Implementation: Gecko
+Running triad 200 times
+Number of elements: 256000000
+Precision: double
+Array size: 2048000.0 KB (=2048.0 MB)
+Total size: 6144000.0 KB (=6144.0 MB)
+--------------------------------
+Runtime (seconds): 1.54883
+Bandwidth (GB/s):  793.371
+
+
+
+
+LocA -> LocH -> LocG -> LocG1,LocG2
+
+BabelStream
+Version: 3.3
+Implementation: Gecko
+Running triad 200 times
+Number of elements: 256000000
+Precision: double
+Array size: 2048000.0 KB (=2048.0 MB)
+Total size: 6144000.0 KB (=6144.0 MB)
+--------------------------------
+Runtime (seconds): 0.85021
+Bandwidth (GB/s):  1445.294
+
+
+
+LocA -> LocH -> LocG -> LocG1,LocG2,LocG3
+
+BabelStream
+Version: 3.3
+Implementation: Gecko
+Running triad 200 times
+Number of elements: 256000000
+Precision: double
+Array size: 2048000.0 KB (=2048.0 MB)
+Total size: 6144000.0 KB (=6144.0 MB)
+--------------------------------
+Runtime (seconds): 0.69699
+Bandwidth (GB/s):  1763.016
+
+
+
+LocA -> LocH -> LocG -> LocG1,LocG2,LocG3,LocG4
+
+BabelStream
+Version: 3.3
+Implementation: Gecko
+Running triad 200 times
+Number of elements: 256000000
+Precision: double
+Array size: 2048000.0 KB (=2048.0 MB)
+Total size: 6144000.0 KB (=6144.0 MB)
+--------------------------------
+Runtime (seconds): 0.65225
+Bandwidth (GB/s):  1883.930
+
+
+
+
+===============================================
+===============================================
+===============================================
+
+
+LocH -> LocA -> LocG,LocN -> ...
+Policy : BW
+
+BabelStream
+Version: 3.3
+Implementation: Gecko
+Running triad 200 times
+Number of elements: 256000000
+Precision: double
+Array size: 2048000.0 KB (=2048.0 MB)
+Total size: 6144000.0 KB (=6144.0 MB)
+--------------------------------
+Runtime (seconds): 5.74697
+Bandwidth (GB/s):  213.817
+
+
+
+
+GECKO_POLICY="percentage:[24.5,24.5,24.5,24.5,0.2]"
+
+BabelStream
+Version: 3.3
+Implementation: Gecko
+Running triad 200 times
+Number of elements: 256000000
+Precision: double
+Array size: 2048000.0 KB (=2048.0 MB)
+Total size: 6144000.0 KB (=6144.0 MB)
+--------------------------------
+Runtime (seconds): 0.74469
+Bandwidth (GB/s):  1650.087
+
+
+
+
+GECKO_POLICY="percentage:[24.995,24.995,24.995,24.995,0.02]"
+
+
+BabelStream
+Version: 3.3
+Implementation: Gecko
+Running triad 200 times
+Number of elements: 256000000
+Precision: double
+Array size: 2048000.0 KB (=2048.0 MB)
+Total size: 6144000.0 KB (=6144.0 MB)
+--------------------------------
+Runtime (seconds): 0.64084
+Bandwidth (GB/s):  1917.487
+
+
+
+GECKO_POLICY="percentage:[24.99,24.99,24.99,24.99,0.04]"
+
+BabelStream
+Version: 3.3
+Implementation: Gecko
+Running triad 200 times
+Number of elements: 256000000
+Precision: double
+Array size: 2048000.0 KB (=2048.0 MB)
+Total size: 6144000.0 KB (=6144.0 MB)
+--------------------------------
+Runtime (seconds): 0.79189
+Bandwidth (GB/s):  1551.732
+
+
+
+GECKO_POLICY="percentage:[24.9975,24.9975,24.9975,24.9975,0.01]"
+
+BabelStream
+Version: 3.3
+Implementation: Gecko
+Running triad 200 times
+Number of elements: 256000000
+Precision: double
+Array size: 2048000.0 KB (=2048.0 MB)
+Total size: 6144000.0 KB (=6144.0 MB)
+--------------------------------
+Runtime (seconds): 0.62386
+Bandwidth (GB/s):  1969.686
+
+
