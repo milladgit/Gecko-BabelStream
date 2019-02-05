@@ -10,12 +10,12 @@ GeckoStream<T>::GeckoStream(const unsigned int ARRAY_SIZE, int device)
 
   array_size = ARRAY_SIZE;
 
-  #pragma gecko config file("gecko.conf")
+  #pragma gecko config env
 
   // Set up data region on device
-  #pragma gecko memory allocate(a[0:array_size]) type(T) location(exec_location) 
-  #pragma gecko memory allocate(b[0:array_size]) type(T) location(exec_location) 
-  #pragma gecko memory allocate(c[0:array_size]) type(T) location(exec_location) 
+  #pragma gecko memory allocate(a[0:array_size]) type(T) location(exec_location) file("/home/mghane/gecko-extended-bench/Gecko-BabelStream/matA.obj")
+  #pragma gecko memory allocate(b[0:array_size]) type(T) location(exec_location) file("/home/mghane/gecko-extended-bench/Gecko-BabelStream/matB.obj")
+  #pragma gecko memory allocate(c[0:array_size]) type(T) location(exec_location) file("/home/mghane/gecko-extended-bench/Gecko-BabelStream/matC.obj")
 }
 
 template <class T>
