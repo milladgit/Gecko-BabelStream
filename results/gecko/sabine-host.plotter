@@ -1,0 +1,43 @@
+
+type: barplot
+
+
+background_color: #CCCCCC
+
+bar_count: 1
+
+width: 0.13
+
+#colors: SkyBlue, IndianRed
+colors: black
+
+labels: Bandwidth
+
+ylabel: Bandwidth (GB/s)
+
+xticks_rotation: 45
+xticks_pad: 0.1
+
+legend: off
+
+put_label_on_top: off
+
+
+datatype: float
+
+index_begin: 0.0
+index_step: 0.23
+
+
+#xticks_label: CUDA, kokkos, RAJA, OpenACC, Gecko w/ b, Gecko w/ c, Gecko w/ d, Gecko w/ e, Gecko w/ f, Gecko w/ g, Gecko w/ BW, Gecko w/ Percentage (0.02), Gecko w/ Percentage (0.02), Gecko w/ Percentage (0.04)
+#data_0: 815.315, 817.537, 815.934, 792.491, 788.747, 789.046, 793.371, 1445.294, 1763.016, 1883.930, 1650.087, 1969.686, 1917.487, 1551.732
+
+
+#datatable: <num_of_data_columns>
+datatable: 1
+OpenMP;10.440
+kokkos;10.140
+RAJA;10.005
+OpenACC;9.815
+Gecko(a);8.514
+Gecko(b);1

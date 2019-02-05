@@ -1,0 +1,66 @@
+
+type: barplot
+
+
+#background_color: #CCCCCC
+background_color: #DDDDDD
+
+bar_count: 1
+
+width: 0.13
+
+#colors: SkyBlue, IndianRed
+colors: black
+
+labels: Bandwidth
+
+#ylabel: Bandwidth (GB/s)
+
+xticks_rotation: 90
+xticks_label_show: off
+
+
+legend: off
+
+put_label_on_top: off
+
+
+datatype: float
+
+index_begin: 0.0
+index_step: 0.23
+
+ylim: 0, 2100
+
+
+#xticks_label: CUDA, kokkos, RAJA, OpenACC, Gecko w/ b, Gecko w/ c, Gecko w/ d, Gecko w/ e, Gecko w/ f, Gecko w/ g, Gecko w/ BW, Gecko w/ Percentage (0.02), Gecko w/ Percentage (0.02), Gecko w/ Percentage (0.04)
+#data_0: 815.315, 817.537, 815.934, 792.491, 788.747, 789.046, 793.371, 1445.294, 1763.016, 1883.930, 1650.087, 1969.686, 1917.487, 1551.732
+
+
+#datatable: <num_of_data_columns>
+datatable: 1
+CUDA;815.315
+kokkos;817.537
+RAJA;815.934
+OpenACC;792.491
+Gecko (c);788.747
+Gecko (d);789.046
+Gecko (e) - k=2;1445.294
+Gecko (e) - k=3;1763.016
+Gecko (e) - k=4;1883.930
+Gecko (f) - k=4,HS=0.01%;1969.686
+Gecko (f) - k=4,HS=0.02%;1917.487
+Gecko (f) - k=4,HS=0.04%;1551.732
+#Gecko (f) - k=4,HS=0.2%;1650.087
+
+
+
+#Gecko w/ c;793.371
+#Gecko w/ d;1445.294
+#Gecko w/ e;1763.016
+#Gecko w/ f;1883.930
+#Gecko - BW;1650.087
+#Gecko - P (0.04);1551.732
+#Gecko - P (0.02);1917.487
+#Gecko - P (0.01);1969.686
+

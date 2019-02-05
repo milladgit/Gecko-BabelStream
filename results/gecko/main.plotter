@@ -1,0 +1,15 @@
+
+subplot: 2,2
+
+figsize: 8,6
+
+output_filename: output_file.pdf
+
+tight_layout: on
+
+show_plot: on
+
+plot: 1, psg-gpu.plotter
+plot: 0, psg-host.plotter
+plot: 3, sabine-gpu.plotter
+plot: 2, sabine-host.plotter
