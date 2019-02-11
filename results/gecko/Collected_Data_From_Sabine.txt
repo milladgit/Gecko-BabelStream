@@ -14,8 +14,8 @@ Precision: double
 Array size: 2048000.0 KB (=2048.0 MB)
 Total size: 6144000.0 KB (=6144.0 MB)
 --------------------------------
-Runtime (seconds): 117.70399
-Bandwidth (GB/s):  10.440
+Runtime (seconds): 14.83811
+Bandwidth (GB/s):  82.814
 
 
 
@@ -28,8 +28,8 @@ Precision: double
 Array size: 2048000.0 KB (=2048.0 MB)
 Total size: 6144000.0 KB (=6144.0 MB)
 --------------------------------
-Runtime (seconds): 121.18554
-Bandwidth (GB/s):  10.140
+Runtime (seconds): 14.83789
+Bandwidth (GB/s):  82.815
 
 
 
@@ -42,8 +42,8 @@ Precision: double
 Array size: 2048000.0 KB (=2048.0 MB)
 Total size: 6144000.0 KB (=6144.0 MB)
 --------------------------------
-Runtime (seconds): 122.81387
-Bandwidth (GB/s):  10.005
+Runtime (seconds): 14.32512
+Bandwidth (GB/s):  85.779
 
 
 
@@ -56,12 +56,12 @@ Precision: double
 Array size: 2048000.0 KB (=2048.0 MB)
 Total size: 6144000.0 KB (=6144.0 MB)
 --------------------------------
-Runtime (seconds): 125.19159
-Bandwidth (GB/s):  9.815
+Runtime (seconds): 13.36696
+Bandwidth (GB/s):  91.928
 
 
 
-LocA -> LocH -> LocN
+LocA -> LocH -> LocN -> LocN1
 
 BabelStream
 Version: 3.3
@@ -72,8 +72,24 @@ Precision: double
 Array size: 2048000.0 KB (=2048.0 MB)
 Total size: 6144000.0 KB (=6144.0 MB)
 --------------------------------
-Runtime (seconds): 144.33135
-Bandwidth (GB/s):  8.514
+Runtime (seconds): 17.73330
+Bandwidth (GB/s):  69.293
+
+
+
+LocA -> LocN -> LocH -> LocN1
+
+BabelStream
+Version: 3.3
+Implementation: Gecko
+Running triad 200 times
+Number of elements: 256000000
+Precision: double
+Array size: 2048000.0 KB (=2048.0 MB)
+Total size: 6144000.0 KB (=6144.0 MB)
+--------------------------------
+Runtime (seconds): 17.70716
+Bandwidth (GB/s):  69.396
 
 
 

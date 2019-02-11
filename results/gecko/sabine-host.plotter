@@ -35,9 +35,9 @@ index_step: 0.23
 
 #datatable: <num_of_data_columns>
 datatable: 1
-OpenMP;10.440
-kokkos;10.140
-RAJA;10.005
-OpenACC;9.815
-Gecko(a);8.514
-Gecko(b);1
+OpenMP;82.814
+kokkos;82.815
+RAJA;85.779
+OpenACC;91.928
+Gecko(a);69.293
+Gecko(b);69.396
