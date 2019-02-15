@@ -69,6 +69,19 @@ Bandwidth (GB/s):  65.491
 
 
 
+LocA -> LocN -> LocH -> LocN1
+
+BabelStream
+Version: 3.3
+Implementation: Gecko
+Running triad 200 times
+Number of elements: 256000000
+Precision: double
+Array size: 2048000.0 KB (=2048.0 MB)
+Total size: 6144000.0 KB (=6144.0 MB)
+--------------------------------
+Runtime (seconds): 19.93484
+Bandwidth (GB/s):  61.641
 
 
 
@@ -304,8 +317,8 @@ Precision: double
 Array size: 2048000.0 KB (=2048.0 MB)
 Total size: 6144000.0 KB (=6144.0 MB)
 --------------------------------
-Runtime (seconds): 0.79189
-Bandwidth (GB/s):  1551.732
+Runtime (seconds): 0.71410
+Bandwidth (GB/s):  1720.778
 
 
 
