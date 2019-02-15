@@ -1,6 +1,8 @@
 
 type: barplot
 
+title: Sabine - Host only
+
 
 background_color: #CCCCCC
 
@@ -27,6 +29,8 @@ datatype: float
 
 index_begin: 0.0
 index_step: 0.23
+
+ylim: 0, 101
 
 
 #xticks_label: CUDA, kokkos, RAJA, OpenACC, Gecko w/ b, Gecko w/ c, Gecko w/ d, Gecko w/ e, Gecko w/ f, Gecko w/ g, Gecko w/ BW, Gecko w/ Percentage (0.02), Gecko w/ Percentage (0.02), Gecko w/ Percentage (0.04)

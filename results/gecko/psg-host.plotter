@@ -1,6 +1,8 @@
 
 type: barplot
 
+title: PSG - Host only
+
 
 background_color: #CCCCCC
 
@@ -29,6 +31,9 @@ datatype: float
 index_begin: 0.0
 index_step: 0.23
 
+ylim: 0, 101
+
+
 
 #xticks_label: CUDA, kokkos, RAJA, OpenACC, Gecko w/ b, Gecko w/ c, Gecko w/ d, Gecko w/ e, Gecko w/ f, Gecko w/ g, Gecko w/ BW, Gecko w/ Percentage (0.02), Gecko w/ Percentage (0.02), Gecko w/ Percentage (0.04)
 #data_0: 815.315, 817.537, 815.934, 792.491, 788.747, 789.046, 793.371, 1445.294, 1763.016, 1883.930, 1650.087, 1969.686, 1917.487, 1551.732
@@ -40,5 +45,5 @@ OpenMP;76.419
 kokkos;75.775
 RAJA;77.256
 OpenACC;80.112
-Gecko (a);65.491
-Gecko (b);1
+Gecko (a);61.273
+Gecko (b);63.229

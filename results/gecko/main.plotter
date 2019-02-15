@@ -3,7 +3,7 @@ subplot: 2,2
 
 figsize: 8,6
 
-output_filename: output_file.pdf
+#output_filename: stream_results.pdf
 
 tight_layout: on
 

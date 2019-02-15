@@ -53,7 +53,7 @@ Runtime (seconds): 15.33848
 Bandwidth (GB/s):  80.112
 ==========================================================
 
-
+host
 LocA -> LocH -> LocN -> LocN1
 BabelStream
 Version: 3.3
@@ -64,11 +64,12 @@ Precision: double
 Array size: 2048000.0 KB (=2048.0 MB)
 Total size: 6144000.0 KB (=6144.0 MB)
 --------------------------------
-Runtime (seconds): 18.76288
-Bandwidth (GB/s):  65.491
+Runtime (seconds): 20.05459
+Bandwidth (GB/s):  61.273
 
 
 
+host-only
 LocA -> LocN -> LocH -> LocN1
 
 BabelStream
@@ -80,8 +81,8 @@ Precision: double
 Array size: 2048000.0 KB (=2048.0 MB)
 Total size: 6144000.0 KB (=6144.0 MB)
 --------------------------------
-Runtime (seconds): 19.93484
-Bandwidth (GB/s):  61.641
+Runtime (seconds): 19.43397
+Bandwidth (GB/s):  63.229
 
 
 

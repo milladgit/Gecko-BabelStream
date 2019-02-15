@@ -1,6 +1,7 @@
 
 type: barplot
 
+title: PSG - GPU and heterogeneous
 
 #background_color: #CCCCCC
 background_color: #DDDDDD
@@ -50,7 +51,7 @@ Gecko (e) - k=3;1763.016
 Gecko (e) - k=4;1883.930
 Gecko (f) - k=4,HS=0.01%;1969.686
 Gecko (f) - k=4,HS=0.02%;1917.487
-Gecko (f) - k=4,HS=0.04%;1551.732
+Gecko (f) - k=4,HS=0.04%;1720.778
 #Gecko (f) - k=4,HS=0.2%;1650.087
 
 

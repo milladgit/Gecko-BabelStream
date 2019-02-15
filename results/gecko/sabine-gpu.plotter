@@ -1,6 +1,8 @@
 
 type: barplot
 
+title: Sabine - GPU and heterogeneous
+
 
 #background_color: #CCCCCC
 background_color: #DDDDDD
