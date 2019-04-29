@@ -1,17 +1,17 @@
 
 type: barplot
 
-title: Sabine - Host only
+title: Sabine - Multicore
 
 
-background_color: #CCCCCC
+#background_color: #EEEEEE
 
 bar_count: 1
 
 width: 0.13
 
 #colors: SkyBlue, IndianRed
-colors: black
+colors: Firebrick
 
 labels: Bandwidth
 
@@ -24,13 +24,16 @@ legend: off
 
 put_label_on_top: off
 
+grid: on
+grid_which: both
+
 
 datatype: float
 
 index_begin: 0.0
 index_step: 0.23
 
-ylim: 0, 101
+ylim: 0, 110
 
 
 #xticks_label: CUDA, kokkos, RAJA, OpenACC, Gecko w/ b, Gecko w/ c, Gecko w/ d, Gecko w/ e, Gecko w/ f, Gecko w/ g, Gecko w/ BW, Gecko w/ Percentage (0.02), Gecko w/ Percentage (0.02), Gecko w/ Percentage (0.04)
@@ -39,9 +42,9 @@ ylim: 0, 101
 
 #datatable: <num_of_data_columns>
 datatable: 1
-OpenMP;82.814
-kokkos;82.815
-RAJA;85.779
-OpenACC;91.928
-Gecko(a);69.293
-Gecko(b);69.396
+OpenMP;93.468
+Kokkos;93.310
+RAJA;92.904
+OpenACC;96.843
+Gecko (a);93.937
+Gecko (b);93.146

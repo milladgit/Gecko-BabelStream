@@ -1,17 +1,16 @@
 
 type: barplot
 
-title: PSG - Host only
+title: PSG - Multicore
 
-
-background_color: #CCCCCC
+#background_color: #EEEEEE
 
 bar_count: 1
 
 width: 0.13
 
 #colors: SkyBlue, IndianRed
-colors: black
+colors: Firebrick
 
 labels: Bandwidth
 
@@ -19,6 +18,9 @@ ylabel: Bandwidth (GB/s)
 
 xticks_rotation: 90
 xticks_label_show: off
+
+grid: on
+grid_which: both
 
 
 legend: off
@@ -31,7 +33,7 @@ datatype: float
 index_begin: 0.0
 index_step: 0.23
 
-ylim: 0, 101
+ylim: 0, 110
 
 
 
@@ -42,7 +44,7 @@ ylim: 0, 101
 #datatable: <num_of_data_columns>
 datatable: 1
 OpenMP;76.419
-kokkos;75.775
+Kokkos;75.775
 RAJA;77.256
 OpenACC;80.112
 Gecko (a);61.273

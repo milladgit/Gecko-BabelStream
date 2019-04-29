@@ -1,0 +1,11 @@
+BabelStream
+Version: 3.3
+Implementation: Gecko
+Running triad 200 times
+Number of elements: 256000000
+Precision: double
+Array size: 2048000.0 KB (=2048.0 MB)
+Total size: 6144000.0 KB (=6144.0 MB)
+--------------------------------
+Runtime (seconds): 2.90521
+Bandwidth (GB/s):  422.964

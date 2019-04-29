@@ -1,22 +1,21 @@
 
 type: barplot
 
-title: Sabine - GPU and heterogeneous
+title: Sabine - Multi-GPU
 
 
-#background_color: #CCCCCC
-background_color: #DDDDDD
+#background_color: #EEEEEE
 
 bar_count: 1
 
 width: 0.13
 
 #colors: SkyBlue, IndianRed
-colors: black
+colors: Firebrick
 
 labels: Bandwidth
 
-#ylabel: Bandwidth (GB/s)
+ylabel: Bandwidth (GB/s)
 
 xticks_rotation: 45
 xticks_pad: 0.1
@@ -24,6 +23,9 @@ xticks_pad: 0.1
 legend: off
 
 put_label_on_top: off
+
+grid: on
+grid_which: both
 
 
 datatype: float
@@ -40,16 +42,16 @@ ylim: 0, 2100
 
 #datatable: <num_of_data_columns>
 datatable: 1
-CUDA;826.017
-kokkos;828.804
-RAJA;794.455
-OpenACC;828.153
-Gecko(c);789.240
-Gecko(d);789.046
+CUDA;554.725
+Kokkos;558.214
+RAJA;554.091
+OpenACC;544.028
+Gecko(c);542.289
+Gecko(d);542.610
+Gecko(e)-k=2;1056.299
+Gecko(e)-k=3;0
+Gecko(e)-k=4;0
 
-Gecko(e)-k=2;1368.309
-Gecko(e)-k=3;1694.738
-Gecko(e)-k=4;1900.455
-Gecko(f)-k=4,HS=0.01%;1758.526
-Gecko(f)-k=4,HS=0.02%;1241.900
-Gecko(f)-k=4,HS=0.04%;1791.881
+#Gecko(f)-k=4,HS=0.01%;1758.526
+#Gecko(f)-k=4,HS=0.02%;1241.900
+#Gecko(f)-k=4,HS=0.04%;1791.881

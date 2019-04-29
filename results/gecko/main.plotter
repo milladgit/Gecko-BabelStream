@@ -1,15 +1,19 @@
 
-subplot: 2,2
+subplot: 2,3
 
-figsize: 8,6
+figsize: 9,6
 
-#output_filename: stream_results.pdf
+output_filename: stream_results.pdf
 
 tight_layout: on
 
 show_plot: on
 
-plot: 1, psg-gpu.plotter
 plot: 0, psg-host.plotter
-plot: 3, sabine-gpu.plotter
-plot: 2, sabine-host.plotter
+plot: 1, psg-gpu.plotter
+plot: 2, psg-hetero.plotter
+
+plot: 3, sabine-host.plotter
+plot: 4, sabine-gpu.plotter
+plot: 5, sabine-hetero.plotter
+
