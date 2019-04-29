@@ -63,7 +63,7 @@ Bandwidth (GB/s):  96.843
 
 
 Gecko - a
-LocA -> LocH -> LocN -> LocN1
+LocA -> LocH -> LocN -> LocN1          (without GPUs in the hierarchy)
 
 BabelStream
 Version: 3.3
@@ -80,7 +80,7 @@ Bandwidth (GB/s):  93.937
 
 
 Gecko - b
-LocA -> LocN -> LocH -> LocN1
+LocA -> LocN -> LocH -> LocN1          (without GPUs in the hierarchy)
 
 BabelStream
 Version: 3.3
@@ -95,6 +95,40 @@ Runtime (seconds): 13.19215
 Bandwidth (GB/s):  93.146
 
 
+
+
+
+Gecko - a
+LocA -> LocH -> LocN -> LocN1          (with GPUs in the hierarchy)
+
+BabelStream
+Version: 3.3
+Implementation: Gecko
+Running triad 200 times
+Number of elements: 256000000
+Precision: double
+Array size: 2048000.0 KB (=2048.0 MB)
+Total size: 6144000.0 KB (=6144.0 MB)
+--------------------------------
+Runtime (seconds): 17.20551
+Bandwidth (GB/s):  71.419
+
+
+
+Gecko - b
+LocA -> LocN -> LocH -> LocN1          (with GPUs in the hierarchy)
+
+BabelStream
+Version: 3.3
+Implementation: Gecko
+Running triad 200 times
+Number of elements: 256000000
+Precision: double
+Array size: 2048000.0 KB (=2048.0 MB)
+Total size: 6144000.0 KB (=6144.0 MB)
+--------------------------------
+Runtime (seconds): 17.19228
+Bandwidth (GB/s):  71.474
 
 
 

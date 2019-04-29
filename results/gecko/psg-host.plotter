@@ -47,5 +47,5 @@ OpenMP;76.419
 Kokkos;75.775
 RAJA;77.256
 OpenACC;80.112
-Gecko (a);61.273
-Gecko (b);63.229
+Gecko (a);75.700
+Gecko (b);75.959
