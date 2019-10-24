@@ -1,5 +1,5 @@
-BabelStream
-==========
+BabelStream for Gecko
+=====================
 
 <img src="https://github.com/UoB-HPC/BabelStream/blob/gh-pages/img/BabelStreamlogo.png?raw=true" alt="logo" height="300" align="right" />
 
@@ -18,6 +18,7 @@ Currently implemented are:
   - Kokkos
   - RAJA
   - SYCL
+  - Gecko
 
 This code was previously called GPU-STREAM.
 
@@ -40,6 +41,16 @@ Some models allow specifying a CPU or GPU style target, and this can be set by p
 Pass in extra flags via the `EXTRA_FLAGS` option.
 
 The binaries are named in the form `<model>-stream`.
+
+Building Gecko
+--------------
+
+Install the latest PGI compiler.
+
+Install the directive-based implementation of Gecko from following URL:
+https://github.com/milladgit/rodinia
+
+Use Gecko's geckomake script to build the applications.
 
 Building Kokkos
 ---------------
@@ -73,6 +84,11 @@ Sample results can be found in the `results` subdirectory. If you would like to 
 Citing
 ------
 
+Please cite Gecko implementation of BabelStream via this reference:
+> Ghane, Millad, Sunita Chandrasekaran, and Margaret S. Cheung. "Gecko: Hierarchical Distributed View of Heterogeneous Shared Memory Architectures." Proceedings of the 10th International Workshop on Programming Models and Applications for Multicores and Manycores. ACM, 2019.
+
+
+
 Please cite BabelStream via this reference:
 
 > Deakin T, Price J, Martineau M, McIntosh-Smith S. GPU-STREAM v2.0: Benchmarking the achievable memory bandwidth of many-core processors across diverse parallel programming models. 2016. Paper presented at P^3MA Workshop at ISC High Performance, Frankfurt, Germany.
@@ -94,3 +110,6 @@ You can view the [Poster and Extended Abstract](http://sc17.supercomputing.org/S
 
 
 [1]: McCalpin, John D., 1995: "Memory Bandwidth and Machine Balance in Current High Performance Computers", IEEE Computer Society Technical Committee on Computer Architecture (TCCA) Newsletter, December 1995.
+
+
+
